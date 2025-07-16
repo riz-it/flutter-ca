@@ -4,5 +4,4 @@ import 'package:flutter_ca/modules/authentication/domain/entities/user_entity.da
 
 abstract class UserRepository {
   Future<Either<Failure, UserEntity>> findByUsername(String username);
-  Future<Either<Failure, UserEntity>> findByEmail(String email);
 }

@@ -7,7 +7,7 @@ class FindByUsernameUseCase {
   final UserRepository _repository;
 
   FindByUsernameUseCase(this._repository);
-  Future<Either<Failure, UserEntity>> execute(String username) {
+  Future<Either<Failure, UserEntity>> call(String username) {
     return _repository.findByUsername(username);
   }
 }
